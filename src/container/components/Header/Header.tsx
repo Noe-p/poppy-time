@@ -1,4 +1,4 @@
-import { H1, Image, P18 } from '@/components';
+import { H1, Image } from '@/components';
 import { useTranslation } from 'next-i18next';
 import React, { useEffect, useState } from 'react';
 import tw from 'tailwind-styled-components';
@@ -29,8 +29,7 @@ export function Header(props: HeaderProps): React.JSX.Element {
           alt='header'
         />
       </ImageBackground>
-      <Title $isAnimated={isAnimated}>{t('home.name')}</Title>
-      <SubTitle $isAnimated={isAnimated}>{t('home.subTitle')}</SubTitle>
+      <Title $isAnimated={isAnimated}>{t('home.title')}</Title>
     </Main>
   );
 }
@@ -83,22 +82,4 @@ const Title = tw(H1)<{ $isAnimated: boolean }>`
   ${(props) => (props.$isAnimated ? 'opacity-100' : 'opacity-0')}
   line-height-1
   z-20
-`;
-
-const SubTitle = tw(P18)<{ $isAnimated: boolean }>`
-  text-white
-  text-2xl
-  lg:text-4xl
-  font-bold
-  text-center
-  transform
-  transition-all
-  duration-1000
-  delay-100
-  ease-in-out
-  ${(props) => (props.$isAnimated ? 'translate-y-0' : '-translate-y-40')}
-  ${(props) => (props.$isAnimated ? 'opacity-100' : 'opacity-0')}
-  line-height-1
-  z-20
-
 `;
