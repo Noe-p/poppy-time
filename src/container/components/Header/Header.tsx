@@ -25,7 +25,7 @@ export function Header(props: HeaderProps): React.JSX.Element {
         <Image
           layout='fill'
           objectFit='cover'
-          src='/images/header.webp'
+          src='/images/header.webP'
           alt='header'
         />
       </ImageBackground>
