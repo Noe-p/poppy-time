@@ -29,4 +29,5 @@ const Page = tw.div`
   justify-center
   z-0
   min-h-screen
+  px-5 md:px-10
 `;

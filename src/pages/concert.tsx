@@ -1,13 +1,14 @@
 import { SeoHead } from '@/container/components';
-import { DynamicPages } from '@/container/pages';
+import { ConcertPage } from '@/container/pages';
 import { PageBaseProps } from '@/types';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import React from 'react';
 
-export default function index(): React.JSX.Element {
+export default function IndexPage(): React.JSX.Element {
   return (
     <>
       <SeoHead />
-      <DynamicPages />
+      <ConcertPage />
     </>
   );
 }

@@ -49,13 +49,29 @@ export function NavBar(props: NavBarProps): React.JSX.Element {
         </Left>
         {!isMobile ? (
           <Right>
-            <RightLink onClick={() => router.push(ROUTES.dynamicPage)}>
+            <RightLink onClick={() => router.push(ROUTES.concert)}>
               <TextNavigation
                 $selected={
-                  `/${router.pathname.split('/')[1]}` === ROUTES.dynamicPage
+                  `/${router.pathname.split('/')[1]}` === ROUTES.concert
                 }
               >
-                {t('dynamicPage')}
+                {t('concert.name')}
+              </TextNavigation>
+            </RightLink>
+            <RightLink onClick={() => router.push(ROUTES.studio)}>
+              <TextNavigation
+                $selected={
+                  `/${router.pathname.split('/')[1]}` === ROUTES.studio
+                }
+              >
+                {t('studio.name')}
+              </TextNavigation>
+            </RightLink>
+            <RightLink onClick={() => router.push(ROUTES.ep)}>
+              <TextNavigation
+                $selected={`/${router.pathname.split('/')[1]}` === ROUTES.ep}
+              >
+                {t('ep.name')}
               </TextNavigation>
             </RightLink>
             <RightLink onClick={() => router.push(ROUTES.about)}>
@@ -81,11 +97,25 @@ export function NavBar(props: NavBarProps): React.JSX.Element {
               </MenuLink>
               <MenuLink
                 $selected={
-                  `/${router.pathname.split('/')[1]}` === ROUTES.dynamicPage
+                  `/${router.pathname.split('/')[1]}` === ROUTES.concert
                 }
-                onClick={() => router.push(ROUTES.dynamicPage)}
+                onClick={() => router.push(ROUTES.concert)}
               >
-                {t('dynamicPage')}
+                {t('concert.name')}
+              </MenuLink>
+              <MenuLink
+                $selected={
+                  `/${router.pathname.split('/')[1]}` === ROUTES.studio
+                }
+                onClick={() => router.push(ROUTES.studio)}
+              >
+                {t('studio.name')}
+              </MenuLink>
+              <MenuLink
+                $selected={`/${router.pathname.split('/')[1]}` === ROUTES.ep}
+                onClick={() => router.push(ROUTES.ep)}
+              >
+                {t('ep.name')}
               </MenuLink>
               <MenuLink
                 $selected={`/${router.pathname.split('/')[1]}` === ROUTES.about}

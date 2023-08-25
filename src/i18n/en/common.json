@@ -1,19 +1,47 @@
 {
   "langage": "en",
   "home": {
-    "name": "home",
-    "subTitle": "This is the home page",
+    "name": "Poppy",
     "title": "Poppy Time",
-    "link": "About"
+    "sections": {
+      "section1": {
+        "p1": "Nous sommes Poppy Time, un groupe de musique originaire de Quimper formé il y a 3 ans. Nous jouons du Funk Electronique Rock, et nous adorons mélanger les rythmes et les genres pour produire une musique entraînante et originale."
+      },
+      "section2": {
+        "p1": "Notre groupe est composé de cinq membres, chacun apportant sa propre touche personnelle à notre musique. Nous avons Finlay à la basse et chant, Robin à la guitare, Alexis au saxophone, Louis au piano et Manon à la batterie. Nous avons commencé à jouer ensemble il y a trois ans, et depuis, nous avons parcouru un long chemin en matière de création musicale."
+      },
+      "section3": {
+        "p1": "Finlay est actuellement en licence de jazz à Toulouse, tandis que Robin suit une formation d'audiovisuel à Brest. Alexis poursuit une formation au conservatoire de Brest, tout comme Manon et Louis est en terminal à Quimper."
+      },
+      "section4": {
+        "p1": "Notre aventure musicale a commencé au lycée de Quimper, et depuis, nous avons eu l'opportunité de nous produire à diverses occasions, notamment dans notre ancienne école, à la fête de la musique de Brest et nous sommes impatients de participer au festival de Cornouaille à venir."
+      },
+      "section5": {
+        "p1": "Notre passion commune pour la musique nous unit, et nous mettons tout notre cœur et notre énergie dans chaque performance pour transmettre notre créativité au public."
+      },
+      "section6": {
+        "p1": "Nous serions honorés de pouvoir partager notre musique avec votre public, et nous espérons que notre proposition saura susciter votre intérêt."
+      }
+    }
+  },
+  "concert": {
+    "name": "Concert",
+    "title": "Concert"
+  },
+  "studio": {
+    "name": "Studio",
+    "title": "Studio"
   },
   "about": {
     "name": "About",
-    "title": "About",
-    "subtitle": "This is the about page",
-    "link": "Back to Home"
+    "title": "About"
+  },
+  "ep": {
+    "name": "EP",
+    "title": "EP"
   },
   "generics": {
-    "copyright": "Copyright © 2023 - Starter-template - All rights reserved",
+    "copyright": "Copyright © 2023 - Poppy Time - All rights reserved",
     "designed": "Designed and developed by "
   },
   "common": {

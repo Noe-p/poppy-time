@@ -1,3 +1,5 @@
 export * from './AboutPage';
-export * from './DynamicPage';
+export * from './ConcertPage';
+export * from './EpPage';
 export * from './HomePage';
+export * from './StudioPage';

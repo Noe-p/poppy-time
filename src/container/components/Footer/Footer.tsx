@@ -31,7 +31,7 @@ export function Footer(props: FooterProps): React.JSX.Element {
       <SocialMediasContainer>
         <SocialLogo network='facebook' />
         <SocialLogo network='instagram' />
-        <SocialLogo network='twitter' />
+        <SocialLogo network='youtube' />
         <SocialLogo network='linkedin' />
       </SocialMediasContainer>
       <CopyRight>
@@ -51,11 +51,13 @@ const Main = tw.div`
   bg-gray-100
   w-full
   flex-col
+  py-8
 `;
 
 const SocialMediasContainer = tw.div`
   flex
   p-4
+  mb-8
 `;
 
 const SocialLogo = tw(SocialIcon)`
@@ -75,7 +77,6 @@ const CopyRight = tw(P14)`
   text-center
   text-gray-500
   w-3/4
-  mb-4
 `;
 
 const InfosContainer = tw.div`
@@ -84,7 +85,6 @@ const InfosContainer = tw.div`
   items-center
   justify-center
   mb-2
-  mt-8
 `;
 
 const LinkStyled = tw(Link)`
