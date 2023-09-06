@@ -30,8 +30,6 @@ export function NavBar(props: NavBarProps): React.JSX.Element {
     window.addEventListener('resize', handleResize);
   }, []);
 
-  useEffect(() => {}, []);
-
   return (
     <Main className={className} $isClose={isClose}>
       <Content>
@@ -49,15 +47,6 @@ export function NavBar(props: NavBarProps): React.JSX.Element {
         </Left>
         {!isMobile ? (
           <Right>
-            <RightLink onClick={() => router.push(ROUTES.concert)}>
-              <TextNavigation
-                $selected={
-                  `/${router.pathname.split('/')[1]}` === ROUTES.concert
-                }
-              >
-                {t('concert.name')}
-              </TextNavigation>
-            </RightLink>
             <RightLink onClick={() => router.push(ROUTES.studio)}>
               <TextNavigation
                 $selected={
@@ -67,18 +56,34 @@ export function NavBar(props: NavBarProps): React.JSX.Element {
                 {t('studio.name')}
               </TextNavigation>
             </RightLink>
-            <RightLink onClick={() => router.push(ROUTES.ep)}>
+            <RightLink onClick={() => router.push(ROUTES.concert)}>
               <TextNavigation
-                $selected={`/${router.pathname.split('/')[1]}` === ROUTES.ep}
+                $selected={
+                  `/${router.pathname.split('/')[1]}` === ROUTES.concert
+                }
               >
-                {t('ep.name')}
+                {t('concert.name')}
               </TextNavigation>
             </RightLink>
-            <RightLink onClick={() => router.push(ROUTES.about)}>
+            <RightLink onClick={() => router.push(ROUTES.musician)}>
               <TextNavigation
-                $selected={`/${router.pathname.split('/')[1]}` === ROUTES.about}
+                $selected={`/${router.pathname.split('/')[1]}` === ROUTES.musician}
               >
-                {t('about.name')}
+                {t('musician.name')}
+              </TextNavigation>
+            </RightLink>
+            <RightLink onClick={() => router.push(ROUTES.news)}>
+              <TextNavigation
+                $selected={`/${router.pathname.split('/')[1]}` === ROUTES.news}
+              >
+                {t('news.name')}
+              </TextNavigation>
+            </RightLink>
+            <RightLink onClick={() => router.push(ROUTES.project)}>
+              <TextNavigation
+                $selected={`/${router.pathname.split('/')[1]}` === ROUTES.project}
+              >
+                {t('project.name')}
               </TextNavigation>
             </RightLink>
           </Right>
@@ -97,14 +102,6 @@ export function NavBar(props: NavBarProps): React.JSX.Element {
               </MenuLink>
               <MenuLink
                 $selected={
-                  `/${router.pathname.split('/')[1]}` === ROUTES.concert
-                }
-                onClick={() => router.push(ROUTES.concert)}
-              >
-                {t('concert.name')}
-              </MenuLink>
-              <MenuLink
-                $selected={
                   `/${router.pathname.split('/')[1]}` === ROUTES.studio
                 }
                 onClick={() => router.push(ROUTES.studio)}
@@ -112,16 +109,30 @@ export function NavBar(props: NavBarProps): React.JSX.Element {
                 {t('studio.name')}
               </MenuLink>
               <MenuLink
-                $selected={`/${router.pathname.split('/')[1]}` === ROUTES.ep}
-                onClick={() => router.push(ROUTES.ep)}
+                $selected={
+                  `/${router.pathname.split('/')[1]}` === ROUTES.concert
+                }
+                onClick={() => router.push(ROUTES.concert)}
               >
-                {t('ep.name')}
+                {t('concert.name')}
               </MenuLink>
               <MenuLink
-                $selected={`/${router.pathname.split('/')[1]}` === ROUTES.about}
-                onClick={() => router.push(ROUTES.about)}
+                $selected={`/${router.pathname.split('/')[1]}` === ROUTES.musician}
+                onClick={() => router.push(ROUTES.musician)}
               >
-                {t('about.name')}
+                {t('musician.name')}
+              </MenuLink>
+              <MenuLink
+                $selected={`/${router.pathname.split('/')[1]}` === ROUTES.news}
+                onClick={() => router.push(ROUTES.news)}
+              >
+                {t('news.name')}
+              </MenuLink>
+              <MenuLink
+                $selected={`/${router.pathname.split('/')[1]}` === ROUTES.project}
+                onClick={() => router.push(ROUTES.project)}
+              >
+                {t('project.name')}
               </MenuLink>
             </Menu>
           </Right>
@@ -189,19 +200,20 @@ const LogoContainer = tw.div`
   cursor-pointer
 `;
 
-const TextNavigation = tw(P18)<{ $selected?: boolean }>`
+const TextNavigation = tw(P18) <{ $selected?: boolean }>`
   uppercase
   ${(props) => (props.$selected ? 'opacity-100' : 'opacity-50')}
-  hover:text-black
   transition-all
   duration-300
   cursor-pointer
+  hover:opacity-100
+  text-black
+  
 
   ${(props) =>
     props.$selected
       ? 'border-b-2 border-black'
       : 'border-b-2 border-transparent'}
-  hover:border-black
 `;
 
 const Menu = tw.div<{ $isOpen: boolean }>`
@@ -221,7 +233,7 @@ const Menu = tw.div<{ $isOpen: boolean }>`
   z-50
 `;
 
-const MenuLink = tw(H2)<{ $selected?: boolean }>`
+const MenuLink = tw(H2) <{ $selected?: boolean }>`
   uppercase
   ${(props) => (props.$selected ? 'text-black' : 'text-gray-700')}
   m-4

@@ -1,7 +1,8 @@
 export const ROUTES = {
   home: '/',
-  about: '/about',
+  musician: '/musician',
   concert: '/concert',
   studio: '/studio',
-  ep: '/ep',
+  project: '/project',
+  news: '/news',
 };

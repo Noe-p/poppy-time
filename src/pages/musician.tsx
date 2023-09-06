@@ -1,5 +1,5 @@
 import { SeoHead } from '@/container/components';
-import { EPPage } from '@/container/pages';
+import { MusicianPage } from '@/container/pages';
 import { PageBaseProps } from '@/types';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import React from 'react';
@@ -8,7 +8,7 @@ export default function IndexPage(): React.JSX.Element {
   return (
     <>
       <SeoHead />
-      <EPPage />
+      <MusicianPage />
     </>
   );
 }

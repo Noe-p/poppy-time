@@ -1,14 +1,13 @@
 import {
-  FlexColJustifyCenter,
-  Grid3,
-  GridCol1,
-  GridCol2,
+  H1,
   Layout,
   P18,
 } from '@/components';
+import router from 'next/router';
 import { Header } from '@/container/components';
 import { useTranslation } from 'next-i18next';
 import tw from 'tailwind-styled-components';
+import { ROUTES } from '@/routing';
 export function HomePage(): React.JSX.Element {
   const { t } = useTranslation();
 
@@ -16,66 +15,31 @@ export function HomePage(): React.JSX.Element {
     <Layout>
       <Header />
       <Main>
-        <Grid3 className='md:gap-10 mb-10'>
-          <GridCol1 className='mb-5 md:mb-0'>
-            <ImageStyled src='/images/home/home-section1.webP' alt='section1' />
-          </GridCol1>
-          <GridCol2>
-            <FlexColJustifyCenter>
-              <P18>{t('home.sections.section1.p1')}</P18>
-            </FlexColJustifyCenter>
-          </GridCol2>
-        </Grid3>
-        <Grid3 className='md:gap-10  mb-10'>
-          <GridCol2 className='order-2 md:order-1'>
-            <FlexColJustifyCenter>
-              <P18>{t('home.sections.section2.p1')}</P18>
-            </FlexColJustifyCenter>
-          </GridCol2>
-          <GridCol1 className='mb-5 md:mb-0 order-1'>
-            <ImageStyled src='/images/home/home-section2.webP' alt='section2' />
-          </GridCol1>
-        </Grid3>
-        <Grid3 className='md:gap-10 mb-10'>
-          <GridCol1 className='mb-5 md:mb-0'>
-            <ImageStyled src='/images/home/home-section3.webP' alt='section3' />
-          </GridCol1>
-          <GridCol2>
-            <FlexColJustifyCenter>
-              <P18>{t('home.sections.section3.p1')}</P18>
-            </FlexColJustifyCenter>
-          </GridCol2>
-        </Grid3>
-        <Grid3 className='md:gap-10  mb-10'>
-          <GridCol2 className='order-2 md:order-1'>
-            <FlexColJustifyCenter>
-              <P18>{t('home.sections.section4.p1')}</P18>
-            </FlexColJustifyCenter>
-          </GridCol2>
-          <GridCol1 className='mb-5 md:mb-0 order-1'>
-            <ImageStyled src='/images/home/home-section4.webP' alt='section4' />
-          </GridCol1>
-        </Grid3>
-        <Grid3 className='md:gap-10 mb-10'>
-          <GridCol1 className='mb-5 md:mb-0'>
-            <ImageStyled src='/images/home/home-section5.webP' alt='section5' />
-          </GridCol1>
-          <GridCol2>
-            <FlexColJustifyCenter>
-              <P18>{t('home.sections.section5.p1')}</P18>
-            </FlexColJustifyCenter>
-          </GridCol2>
-        </Grid3>
-        <Grid3 className='md:gap-10 mb-10'>
-          <GridCol2 className='order-2 md:order-1'>
-            <FlexColJustifyCenter>
-              <P18>{t('home.sections.section6.p1')}</P18>
-            </FlexColJustifyCenter>
-          </GridCol2>
-          <GridCol1 className='mb-5 md:mb-0 order-1'>
-            <ImageStyled src='/images/home/home-section6.webP' alt='section6' />
-          </GridCol1>
-        </Grid3>
+        <H1 className='mb-5'>{t('home.sections.title')}</H1>
+        <Text>{t('home.sections.p1')}</Text>
+        <Text>{t('home.sections.p2')}</Text>
+        <Text>
+          {t('home.sections.p3')}
+          <Anchor onClick={() => router.push(ROUTES.studio)}>{t('studio.name')}</Anchor>
+        </Text>
+        <Text>
+          {t('home.sections.p4')}
+          <Anchor onClick={() => router.push(ROUTES.concert)}>{t('concert.name')}</Anchor>
+        </Text>
+        <Text>
+          {t('home.sections.p5')}
+          <Anchor onClick={() => router.push(ROUTES.musician)}>{t('musician.name')}</Anchor>
+        </Text>
+        <Text>
+          {t('home.sections.p6')}
+          <Anchor onClick={() => router.push(ROUTES.news)}>{t('news.name')}</Anchor>
+        </Text>
+        <Text>
+          {t('home.sections.p7')}
+          <Anchor onClick={() => router.push(ROUTES.project)}>{t('project.name')}</Anchor>
+        </Text>
+        <Text>{t('home.sections.p8')}</Text>
+        <Text>{t('home.sections.p9')}</Text>
       </Main>
     </Layout>
   );
@@ -90,9 +54,16 @@ const Main = tw.div`
   my-20
 `;
 
-const ImageStyled = tw.img`
+const Text = tw(P18)`
+  text-center
+  my-5
   w-full
-  max-h-100
-  object-cover
-  rounded
-`;
+`
+
+const Anchor = tw.span`
+  text-base
+  text-primary
+  cursor-pointer
+  hover:text-secondary
+  transition
+`

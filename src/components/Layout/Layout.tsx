@@ -20,7 +20,9 @@ export function Layout(props: LayoutProps): React.JSX.Element {
   );
 }
 
-const Main = tw.div``;
+const Main = tw.div`
+  bg-black
+`;
 
 const Page = tw.div`
   flex

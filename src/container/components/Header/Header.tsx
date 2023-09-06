@@ -1,4 +1,4 @@
-import { H1, Image } from '@/components';
+import { FlexRow, H1, Image } from '@/components';
 import { useTranslation } from 'next-i18next';
 import React, { useEffect, useState } from 'react';
 import tw from 'tailwind-styled-components';
@@ -29,7 +29,10 @@ export function Header(props: HeaderProps): React.JSX.Element {
           alt='header'
         />
       </ImageBackground>
-      <Title $isAnimated={isAnimated}>{t('home.title')}</Title>
+      <FlexRow>
+        <Title className='text-primary' $isAnimated={isAnimated}>{t('home.title.part1')}</Title>
+        <Title className='text-secondary' $isAnimated={isAnimated}>{t('home.title.part2')}</Title>
+      </FlexRow>
     </Main>
   );
 }
@@ -52,7 +55,7 @@ const Filter = tw.div`
   w-full
   h-full
   bg-black
-  opacity-20
+  opacity-50
   z-10
 `;
 
@@ -67,7 +70,7 @@ const ImageBackground = tw.div`
   z-0
 `;
 
-const Title = tw(H1)<{ $isAnimated: boolean }>`
+const Title = tw(H1) <{ $isAnimated: boolean }>`
   text-white
   text-4xl
   lg:text-6xl
@@ -82,4 +85,5 @@ const Title = tw(H1)<{ $isAnimated: boolean }>`
   ${(props) => (props.$isAnimated ? 'opacity-100' : 'opacity-0')}
   line-height-1
   z-20
+  mx-1
 `;

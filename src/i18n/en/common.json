@@ -2,39 +2,34 @@
   "langage": "en",
   "home": {
     "name": "Poppy",
-    "title": "Poppy Time",
+    "title": {
+      "part1": "Poppy", 
+      "part2": "Time"
+    },
     "sections": {
-      "section1": {
-        "p1": "Nous sommes Poppy Time, un groupe de musique originaire de Quimper formé il y a 3 ans. Nous jouons du Funk Electronique Rock, et nous adorons mélanger les rythmes et les genres pour produire une musique entraînante et originale."
-      },
-      "section2": {
-        "p1": "Notre groupe est composé de cinq membres, chacun apportant sa propre touche personnelle à notre musique. Nous avons Finlay à la basse et chant, Robin à la guitare, Alexis au saxophone, Louis au piano et Manon à la batterie. Nous avons commencé à jouer ensemble il y a trois ans, et depuis, nous avons parcouru un long chemin en matière de création musicale."
-      },
-      "section3": {
-        "p1": "Finlay est actuellement en licence de jazz à Toulouse, tandis que Robin suit une formation d'audiovisuel à Brest. Alexis poursuit une formation au conservatoire de Brest, tout comme Manon et Louis est en terminal à Quimper."
-      },
-      "section4": {
-        "p1": "Notre aventure musicale a commencé au lycée de Quimper, et depuis, nous avons eu l'opportunité de nous produire à diverses occasions, notamment dans notre ancienne école, à la fête de la musique de Brest et nous sommes impatients de participer au festival de Cornouaille à venir."
-      },
-      "section5": {
-        "p1": "Notre passion commune pour la musique nous unit, et nous mettons tout notre cœur et notre énergie dans chaque performance pour transmettre notre créativité au public."
-      },
-      "section6": {
-        "p1": "Nous serions honorés de pouvoir partager notre musique avec votre public, et nous espérons que notre proposition saura susciter votre intérêt."
-      }
+      "title": "Nous sommes Poppy Time.",
+      "p1": "Sur ce site vous trouverez tout ce que vous avez à savoir sur notre groupe Poppy Time.", 
+      "p2": "Rencontrés au lycée à Quimper. Nous jouons du Funk, Electronique, Rock et adorons mélanger les rythmes et les genres pour produire une musique entraînante et intéressante.", 
+      "p3": "Nous sommes à la recherche de dates de concerts pour l'été prochain. Nous pouvons nous produire pour une durée de 1h, uniquement avec des compositions originales. Vous pouvez écouter et voir une partie de nos compositions dans la rubrique ",
+      "p4": "Nous avons déjà eu l'opportunité de nous produire pour de nombreux concerts, notamment à la fête de la musique de Brest et au festival de Cornouaille à Quimper. Vous pouvez voir des extraits de nos concerts dans la rubrique ", 
+      "p5": "Notre groupe est composé de cinq membres. Un guitariste, un bassiste/chanteur, un pianiste, une batteuse et un saxophoniste. chacun apportant sa propre touche personnelle à notre musique. Vous pouvez visualisez une petite vidéo pour chaque membre du groupe dans la rubrique ", 
+      "p6": "Lors de nos concerts, on a eu de nombreux retours positifs. On à également été relevées dans des articles de presse et nous avons même eu l'honneur d'être présentés sur les ondes de France Inter. Vous pouvez voir ces articles dans la rubrique Revus de presse.", 
+      "p7": "Si vous voulez voir nos projets et nos futurs projets, rendez-vous dans la rubrique nos projets.", 
+      "p8": "Nous serions ravis de participer à votre événement. Vous pouvez être sûr que si vous programmez Poppy Time tout le monde pourra danser et groover.", 
+      "p9": "Vous pouvez nous suivre sur les réseaux sociaux, Instagram, Facebook, Tik Tok, Youtube et nous contacter par mail: poppy.timme@gmail.com"
     }
   },
   "concert": {
-    "name": "Concert",
+    "name": "concert",
     "title": "Concert"
   },
   "studio": {
-    "name": "Studio",
+    "name": "studio",
     "title": "Studio"
   },
-  "about": {
-    "name": "About",
-    "title": "About"
+  "musician": {
+    "name": "musicien",
+    "title": "Musicien"
   },
   "ep": {
     "name": "EP",

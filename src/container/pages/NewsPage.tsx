@@ -2,13 +2,13 @@ import { H1, Layout } from '@/components';
 import { useTranslation } from 'next-i18next';
 import tw from 'tailwind-styled-components';
 
-export function AboutPage(): React.JSX.Element {
+export function NewsPage(): React.JSX.Element {
   const { t } = useTranslation();
 
   return (
     <Layout>
       <Main>
-        <H1>{t('about.name')}</H1>
+        <H1>{t('news.name')}</H1>
       </Main>
     </Layout>
   );
