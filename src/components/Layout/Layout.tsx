@@ -32,4 +32,5 @@ const Page = tw.div`
   z-0
   min-h-screen
   px-5 md:px-10
+  py-25
 `;

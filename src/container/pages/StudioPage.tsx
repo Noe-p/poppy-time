@@ -1,4 +1,4 @@
-import { H1, Layout } from '@/components';
+import { Layout, P18 } from '@/components';
 import { useTranslation } from 'next-i18next';
 import tw from 'tailwind-styled-components';
 
@@ -8,7 +8,7 @@ export function StudioPage(): React.JSX.Element {
   return (
     <Layout>
       <Main>
-        <H1>{t('studio.name')}</H1>
+        <Text>{t('studio.p1')}</Text>
       </Main>
     </Layout>
   );
@@ -16,4 +16,8 @@ export function StudioPage(): React.JSX.Element {
 
 const Main = tw.div`
   
+`;
+
+const Text = tw(P18)`
+  text-center
 `;

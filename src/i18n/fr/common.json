@@ -7,7 +7,7 @@
       "part2": "Time"
     },
     "sections": {
-      "title": "Nous sommes Poppy Time.",
+      "title": "Nous sommes Poppy Time",
       "p1": "Sur ce site vous trouverez tout ce que vous avez à savoir sur notre groupe Poppy Time.", 
       "p2": "Rencontrés au lycée à Quimper. Nous jouons du Funk, Electronique, Rock et adorons mélanger les rythmes et les genres pour produire une musique entraînante et intéressante.", 
       "p3": "Nous sommes à la recherche de dates de concerts pour l'été prochain. Nous pouvons nous produire pour une durée de 1h, uniquement avec des compositions originales. Vous pouvez écouter et voir une partie de nos compositions dans la rubrique ",
@@ -19,21 +19,28 @@
       "p9": "Vous pouvez nous suivre sur les réseaux sociaux, Instagram, Facebook, Tik Tok, Youtube et nous contacter par mail: poppy.timme@gmail.com"
     }
   },
+    "studio": {
+    "name": "Studio",
+    "title": "Studio",
+    "p1":"Pendant le mois d'août 2023 nous nous sommes concentrés sur l’enregistrement et la captation vidéo d’une partie de notre set au Novomax à Quimper, pour pouvoir les diffuser et trouver de nouvelles dates de concert."
+  },
   "concert": {
     "name": "Concert",
-    "title": "Concert"
-  },
-  "studio": {
-    "name": "Studio",
-    "title": "Studio"
+    "title": "Concert", 
+    "p1":"L'été dernier, nous avons été sélectionnés par la mairie de Brest supervisée par margoulin production. Nous avons eu l'opportunité de clôturer la scène rue etienne dolet lors de la fête de la musique. Vous pouvez visualiser quelques clips ci- dessous.",
+    "p2": "En plus on a joué dans une fête privée avec 150 personnes et au festival de Cornouaille à Quimper."
   },
   "musician": {
     "name": "Musicien",
-    "title": "Musicien"
+    "title": "Voici des interviews de chaque membre du groupe."
   },
   "project": {
     "name": "Projet",
-    "title": "Projet"
+    "title": "Projet", 
+    "p1":"En Mars dernier nous sorti en EP de 2 morceaux disponible sur toutes les plateformes de streaming.",
+    "p2": "Nous avons l’ambition de professionnaliser notre groupe.",
+    "p3": "Nous avons déjà une date pour le 25 novembre prochain au Run Ar Puns.",
+    "p4":"Nous sommes en écriture d’un nouvel album qui sortira en 2024."
   },
   "news": {
     "name": "Revus de presse", 
