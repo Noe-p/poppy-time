@@ -29,7 +29,7 @@ export function Header(props: HeaderProps): React.JSX.Element {
           alt='header'
         />
       </ImageBackground>
-      <FlexRow>
+      <FlexRow className='flex-col md:flex-row'>
         <Title className='text-primary' $isAnimated={isAnimated}>{t('home.title.part1')}</Title>
         <Title className='text-secondary' $isAnimated={isAnimated}>{t('home.title.part2')}</Title>
       </FlexRow>
@@ -72,8 +72,7 @@ const ImageBackground = tw.div`
 
 const Title = tw(H1) <{ $isAnimated: boolean }>`
   text-white
-  text-4xl
-  lg:text-6xl
+  text-8xl
   font-bold
   text-center
   transform

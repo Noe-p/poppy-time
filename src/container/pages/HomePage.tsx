@@ -51,10 +51,10 @@ const Main = tw.div`
   items-center
   justify-center
   md:w-2/3
+  mt-10
 `;
 
 const Text = tw(P18)`
-  text-center
   my-5
   w-full
 `

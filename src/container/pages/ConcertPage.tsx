@@ -42,7 +42,7 @@ export function ConcertPage(): React.JSX.Element {
 }
 
 const Main = tw.div`
- 
+ pt-25
 `;
 const ConcertSection = tw.div`
   mx-auto

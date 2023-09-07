@@ -235,8 +235,9 @@ const Menu = tw.div<{ $isOpen: boolean }>`
 
 const MenuLink = tw(H2) <{ $selected?: boolean }>`
   uppercase
-  ${(props) => (props.$selected ? 'text-black' : 'text-gray-700')}
+  ${(props) => (props.$selected ? 'text-black' : 'text-gray-400')}
   m-4
   cursor-pointer
   text-center
+  -translate-y-10
 `;
