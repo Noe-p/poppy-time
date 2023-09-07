@@ -1,5 +1,4 @@
-import { Grid2, GridCol1, H1, H2, H3, Layout, P18 } from '@/components';
-import { useTranslation } from 'next-i18next';
+import { Grid2, GridCol1, H2, H3, Layout, P18 } from '@/components';
 import tw from 'tailwind-styled-components';
 import ReactPlayer from 'react-player/youtube'
 import { concertsData } from '@/data';
@@ -7,7 +6,6 @@ import { useState } from 'react';
 import { useWindowSize } from '@/hooks/useWindowSize';
 
 export function ConcertPage(): React.JSX.Element {
-  const { t } = useTranslation();
   const [videoHover, setVideoHover] = useState<string>()
   const { width } = useWindowSize();
 
