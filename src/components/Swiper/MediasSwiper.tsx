@@ -74,8 +74,6 @@ export function MediasSwiper(props: MediasSwiperProps): JSX.Element {
               <ImageContainer>
                 <ImageStyled>
                   <Image
-                    layout='fill'
-                    objectFit='contain'
                     src={media}
                     alt={media}
                   />
