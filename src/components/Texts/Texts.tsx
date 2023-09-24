@@ -105,59 +105,63 @@ export function Link(props: LinksProps): React.JSX.Element {
 
 const H1Styled = tw.h1`
   text-2xl
-  font-alfa
+  font-mono
   uppercase
   text-white
 `;
 
 const H2Styled = tw.h2`
   text-xl
-  font-alfa
+  font-mono
   text-white
 `;
 
 const H3Styled = tw.h3`
   text-lg
-  font-alfa
+  font-mono
   text-white
 `;
 
 const H4Styled = tw.h4`
   text-[24px]
-  font-alfa
+  font-mono
   text-white
 `;
 
 const P24Styled = tw.p`
   text-[24px]
   font-mono
-  text-white
+  text-gray-300
 `;
 
 const P18Styled = tw.p`
   text-base
-  text-white
+  font-mono
+  text-gray-300
 `;
 
 const P14Styled = tw.p`
   text-sm
-  text-white
+  font-mono
+  text-gray-300
 `;
 
 const P12Styled = tw.p`
   text-xs
-  text-white
+  font-mono
+  text-gray-300
 `;
 
 const P10Styled = tw.p`
   text-2xs
-  text-white
+  font-mono
+  text-gray-300
 `;
 
 const LinkStyled = tw.a`
-  text-primary-700
   size-p2
   cursor-pointer
   font-semibold
-  text-white
+  font-mono
+  text-gray-300
 `;

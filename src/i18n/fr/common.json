@@ -1,13 +1,10 @@
 {
   "langage": "fr",
   "home": {
-    "name": "Poppy",
-    "title": {
-      "part1": "Poppy", 
-      "part2": "Time"
-    },
+    "name": "Poppy Book",
+    "title": "Poppy Time",
     "sections": {
-      "title": "Nous sommes Poppy Time",
+      "title": "Nous sommes <br/> Poppy Time",
       "p1": "Sur ce site vous trouverez tout ce que vous avez à savoir sur notre groupe Poppy Time.", 
       "p2": "Rencontrés au lycée à Quimper. Nous jouons du Funk, Electronique, Rock et adorons mélanger les rythmes et les genres pour produire une musique entraînante et intéressante.", 
       "p3": "Nous sommes à la recherche de dates de concerts pour l'été prochain. Nous pouvons nous produire pour une durée de 1h, uniquement avec des compositions originales. Vous pouvez écouter et voir une partie de nos compositions dans la rubrique ",
@@ -22,17 +19,69 @@
     "studio": {
     "name": "Studio",
     "title": "Studio",
-    "p1":"Pendant le mois d'août 2023 nous nous sommes concentrés sur l’enregistrement et la captation vidéo d’une partie de notre set au Novomax à Quimper, pour pouvoir les diffuser et trouver de nouvelles dates de concert."
+    "studio-1":{
+      "title": "Novomax",
+      "description": "Pendant le mois d'août 2023 nous nous sommes concentrés sur l’enregistrement et la captation vidéo d’une partie de notre set au Novomax à Quimper, pour pouvoir les diffuser et trouver de nouvelles dates de concert.",
+      "videos-1":{
+        "description": "Inspiration rock progressif des années 70. Coucher de soleil de Paris, à la rue, addiction en tout genre, une femme cherche son fils enlevé d'elle, mais en vain..."
+      },
+      "videos-2":{
+        "description": "Musique axée sur un sentiment de nostalgie racontant l’histoire des personnes qui ont du mal à se défaire des bonheurs du passé et évoluer vers quelque chose de nouveau."
+      },
+      "videos-3":{
+        "description": "Musique en 2 parties qui commence très funk pour ensuite le mélanger avec un jeu de basse inspiré techno avec des envolé de saxophone endiablé."
+      },
+      "videos-4":{
+        "description": "Take off signifie décolle à l'impératif. Cette musique monte en intensité petit à petit pour enfin décollé dans un élan quelque peu épique."
+      },
+      "videos-5":{
+        "description": "Un groove très funky, le funkyman n'hésite pas à calmer le jeu pour laisser place à son solo de piano endiablé."
+      },
+      "videos-6":{
+        "description": "Combiné jungle techno avec de la jersey drill sous un soupçon de Cory Wong et de Mononeon, tout ça signifiant un pic d'adrénaline quelque soit la source."
+      }
+    }
   },
   "concert": {
     "name": "Concert",
     "title": "Concert", 
-    "p1":"L'été dernier, nous avons été sélectionnés par la mairie de Brest supervisée par margoulin production. Nous avons eu l'opportunité de clôturer la scène rue etienne dolet lors de la fête de la musique. Vous pouvez visualiser quelques clips ci- dessous.",
-    "p2": "En plus on a joué dans une fête privée avec 150 personnes et au festival de Cornouaille à Quimper."
+    "concert-1":{
+      "title": "Fête de la musique",
+      "description": "L'été dernier, nous avons été sélectionnés par la mairie de Brest supervisée par margoulin production. Nous avons eu l'opportunité de clôturer la scène rue etienne dolet lors de la fête de la musique."
+    },
+    "concert-2":{
+      "title": "Concert privé",
+      "description": "Nous avons joué dans une fête privée avec 150 personnes"
+    }
   },
   "musician": {
-    "name": "Musicien",
-    "title": "Voici des interviews de chaque membre du groupe."
+    "name": "Interviews",
+    "title": "Les musiciens",
+    "manon":{
+      "description": "Étudiante au concervatoir de Brest (DEM)",
+      "instrument": "Batteuse",
+      "age": "19 ans"
+    },
+    "robin":{
+      "description": "Étudiant au BTS Audiovisuel",
+      "instrument": "Guitariste",
+      "age": "20 ans"
+    },
+    "louis":{
+      "description": "Lycée Terminal",
+      "instrument": "Clavieriste",
+      "age": "19 ans"
+    },
+    "finlay":{
+      "description": "Étudiant en Fac de Jazz",
+      "instrument": "Bassiste et Chanteur",
+      "age": "20 ans"
+    },
+    "alexis":{
+      "description": "Étudiant au concervatoir de Brest (DEM)",
+      "instrument": "Saxophoniste",
+      "age": "20 ans"
+    }
   },
   "project": {
     "name": "Projet",
@@ -44,11 +93,13 @@
   },
   "news": {
     "name": "Revus de presse", 
-    "title": "Revus de presse"
+    "title": "Revus de presse",
+    "p1":"Avant la fête de la musique nous avons été interviewé par le Télégramme:",
+    "p2":"A la fin de notre concert au festival de cornouaille, nous avons été mentionné sur France inter et nous sommes également apparut sur le Ouest France:"
   },
   "generics": {
-    "copyright": "Copyright © 2023 - Poppy Time - All rights reserved",
-    "designed": "Designed and developed by "
+    "copyright": "Copyright © 2023 - Poppy Time - Tous droits réservés",
+    "designed": "Conçu et développé par "
   },
   "common": {
     "loading": "Loading..."

@@ -23,15 +23,13 @@ export function Header(props: HeaderProps): React.JSX.Element {
       <Filter />
       <ImageBackground>
         <Image
-          layout='fill'
-          objectFit='cover'
           src='/images/header.webP'
           alt='header'
+          className='border-none'
         />
       </ImageBackground>
       <FlexRow className='flex-col md:flex-row'>
-        <Title className='text-primary' $isAnimated={isAnimated}>{t('home.title.part1')}</Title>
-        <Title className='text-secondary' $isAnimated={isAnimated}>{t('home.title.part2')}</Title>
+        <Title $isAnimated={isAnimated}>{t('home.title')}</Title>
       </FlexRow>
     </Main>
   );

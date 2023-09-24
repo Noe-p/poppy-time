@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next';
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import tw from 'tailwind-styled-components';
-
+import { router } from 'next/router';
 interface FooterProps {
   className?: string;
 }
@@ -15,24 +15,21 @@ export function Footer(props: FooterProps): React.JSX.Element {
   return (
     <Main className={className}>
       <InfosContainer>
-        <LinkStyled href='mailto:noephilippe29@gmail.com' target='_blank'>
-          {t('noephilippe29@gmail.com')}
+        <LinkStyled href='mailto:poppy.timme@gmail.com' target='_blank'>
+          {t('poppy.timme@gmail.com')}
         </LinkStyled>
-        <LinkStyled href='tel:0781533181' target='_blank'>
-          {t('07 81 53 31 81')}
+        <LinkStyled href='tel:0772305954' target='_blank'>
+          {t('07 72 30 59 54')}
         </LinkStyled>
-        <LinkStyled
-          href='https://maps.google.com/maps?q=172+avenue+winston+churchill+rennes'
-          target='_blank'
-        >
-          {t('16 avenue des Lilas - 35000 Rennes')}
+        <LinkStyled href='tel:0767414827' target='_blank'>
+          {t('07 67 41 48 27')}
         </LinkStyled>
       </InfosContainer>
       <SocialMediasContainer>
-        <SocialLogo network='facebook' />
-        <SocialLogo network='instagram' />
-        <SocialLogo network='youtube' />
-        <SocialLogo network='linkedin' />
+        <SocialLogo href="https://www.instagram.com/poppytimme/" target='_blank' network='instagram' />
+        <SocialLogo href="https://www.tiktok.com/@poppy_timme " target='_blank' network='tiktok' />
+        <SocialLogo href="https://www.youtube.com/@poppytime" target='_blank' network='youtube' />
+        <SocialLogo href="https://www.facebook.com/profile.php?id=100090469154443" target='_blank' network='facebook' />
       </SocialMediasContainer>
       <CopyRight>
         {t('generics.designed')}
@@ -89,4 +86,8 @@ const InfosContainer = tw.div`
 
 const LinkStyled = tw(Link)`
   text-gray-500
+  hover:text-primary
+  transition
+  duration-100
+  ease-in-out
 `;

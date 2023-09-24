@@ -1,4 +1,3 @@
-import { Image } from '@/components';
 import { H2, P18 } from '@/components/Texts';
 import { ROUTES } from '@/routing';
 import { ToggleMenuButton } from '@noe-p/react-buttons-components';
@@ -35,9 +34,6 @@ export function NavBar(props: NavBarProps): React.JSX.Element {
       <Content>
         <Left>
           <LogoContainer onClick={() => router.push(ROUTES.home)}>
-            <Logo>
-              <Image width={40} height={40} src='/logo.svg' alt='logo' />
-            </Logo>
             <TextNavigation
               $selected={`/${router.pathname.split('/')[1]}` === ROUTES.home}
             >
@@ -165,12 +161,6 @@ const Content = tw.div`
   justify-between
   items-center
 
-`;
-
-const Logo = tw.div`
-  w-10
-  h-10
-  mr-3
 `;
 
 const Left = tw.div`

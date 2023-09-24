@@ -1,48 +1,104 @@
-import { Grid2, GridCol1, H2, H3, Layout, P18 } from '@/components';
+import { Grid1, Grid2, GridCol1, H1, H3, Image, Layout, P18, Video } from '@/components';
 import tw from 'tailwind-styled-components';
-import ReactPlayer from 'react-player/youtube'
-import { concertsData } from '@/data';
-import { useState } from 'react';
-import { useWindowSize } from '@/hooks/useWindowSize';
+import { Concert } from '@/types';
+import { useTranslation } from 'next-i18next';
 
 export function ConcertPage(): React.JSX.Element {
-  const [videoHover, setVideoHover] = useState<string>()
-  const { width } = useWindowSize();
+  const { t } = useTranslation();
+
+  const concerts: Concert[] = [
+    {
+      id: 'concert-1',
+      title: t('concert.concert-1.title'),
+      description: t('concert.concert-1.description'),
+      videos: [
+        {
+          title: 'Poppax',
+          url: 'https://www.youtube.com/watch?v=O9EsO33RZ1M&ab_channel=Poppytime',
+        },
+        {
+          title: 'Out Of Breath',
+          url: 'https://www.youtube.com/watch?v=8wEDuNeVny4&ab_channel=Poppytime',
+        },
+        {
+          title: 'Solo Louis',
+          url: ' https://www.youtube.com/watch?v=NSnERqZt3Uo&ab_channel=Poppytime ',
+        },
+        {
+          title: 'Retours Concert',
+          url: 'https://youtu.be/j4uxfF5DTr4',
+        },
+      ],
+      images: [
+        {
+          url: '/images/concerts/concert-1/image-1.jpeg',
+        }
+      ]
+    },
+    {
+      id: 'concert-2',
+      title: t('concert.concert-2.title'),
+      description: t('concert.concert-2.description'),
+      images: [
+        {
+          url: '/images/concerts/concert-2/image-1.jpg',
+        },
+        {
+          url: '/images/concerts/concert-2/image-2.jpg',
+        },
+        {
+          url: '/images/concerts/concert-2/image-3.jpg',
+        },
+        {
+          url: '/images/concerts/concert-2/image-4.jpg',
+        },
+        {
+          url: '/images/concerts/concert-2/image-5.jpg',
+        },
+        {
+          url: '/images/concerts/concert-2/image-6.jpg',
+        },
+        {
+          url: '/images/concerts/concert-2/image-7.jpg',
+        }
+      ]
+    }
+  ]
 
   return (
     <Layout>
       <Main>
-        {concertsData.map((concert, i) => (
+        {concerts.map((concert) => (
           <ConcertSection key={concert.id}>
-            <ConcertTitle className={`${i % 2 === 1 ? 'text-primary' : 'text-secondary'}`}>{concert.title}</ConcertTitle>
+            <ConcertTitle>{concert.title}</ConcertTitle>
             {concert.description && <ConcertDescription>{concert.description}</ConcertDescription>}
-            <Grid2>
+            <Grid1 className='w-full'>
               {concert.videos?.map((video) => (
-                <GridCol1 onMouseEnter={() => setVideoHover(video.url)} onMouseLeave={() => setVideoHover(undefined)} key={video.url}>
-                  {video.title && <H3 className={'text-center mb-2'}>{video.title}</H3>}
-                  <ReactPlayer width={width < 700 ? 300 : 640} height={width < 700 ? 200 : 360} controls={false} playsinline={false} playing={videoHover === video.url} url={video.url} />
+                <GridCol1 key={video.url}>
+                  {video.title && <H3 className={'text-center my-2 md:my-7'}>{video.title}</H3>}
+                  <Video src={video.url} />
+                </GridCol1>
+              ))}
+            </Grid1>
+            <Grid2 className='mt-5 w-full'>
+              {concert.images?.map((image, i) => (
+                concert.images && <GridCol1 className={`${concert.images.length % 2 === 1 && i === concert.images.length - 1 && 'col-span-2'}`} key={image.url}>
+                  <Image src={image.url} alt={image.url} />
                 </GridCol1>
               ))}
             </Grid2>
-            <Grid2 className='mt-5'>
-              {concert.images?.map((image) => (
-                <GridCol1 key={image.url}>
-                  <ConcertImage src={image.url} alt={image.url} />
-                </GridCol1>
-              ))}
-            </Grid2>
-
           </ConcertSection>
         ))
         }
-
       </Main>
-    </Layout>
+    </Layout >
   );
 }
 
 const Main = tw.div`
- pt-25
+  pt-25
+  md:w-3/4
+
 `;
 const ConcertSection = tw.div`
   mx-auto
@@ -51,26 +107,17 @@ const ConcertSection = tw.div`
   flex-col
   items-center
   w-full
-  mb-10
+  mb-10 md:mb-20
 `;
 
-const ConcertTitle = tw(H2)`
-  text-center
-  md:w-2/3
+const ConcertTitle = tw(H1)`
+  md:text-center
+  my-5 md:my-10
 `;
 
 const ConcertDescription = tw(P18)`
-  text-center
+  md:text-center
   my-5
-  md:w-2/3
-`;
-
-const ConcertImage = tw.img`
   w-full
-  h-full
-  object-cover
-  object-center
-  rounded-lg
-  max-h-150
 `;
 
