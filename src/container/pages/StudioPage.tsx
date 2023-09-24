@@ -58,7 +58,7 @@ export function StudioPage(): React.JSX.Element {
                 <GridCol1 key={video.url}>
                   {video.title && <H3 className={'text-center my-2 md:my-7'}>{video.title}</H3>}
                   <Video src={video.url} />
-                  {video.description && <P18 className={'text-center my-2 md:my-5'}>{video.description}</P18>}
+                  {video.description && <P18 className={'md:text-center my-2 md:my-5'}>{video.description}</P18>}
                 </GridCol1>
               ))}
             </Grid1>

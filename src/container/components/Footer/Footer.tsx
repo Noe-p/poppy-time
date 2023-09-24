@@ -3,7 +3,6 @@ import { useTranslation } from 'next-i18next';
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import tw from 'tailwind-styled-components';
-import { router } from 'next/router';
 interface FooterProps {
   className?: string;
 }
@@ -26,10 +25,10 @@ export function Footer(props: FooterProps): React.JSX.Element {
         </LinkStyled>
       </InfosContainer>
       <SocialMediasContainer>
-        <SocialLogo href="https://www.instagram.com/poppytimme/" target='_blank' network='instagram' />
-        <SocialLogo href="https://www.tiktok.com/@poppy_timme " target='_blank' network='tiktok' />
-        <SocialLogo href="https://www.youtube.com/@poppytime" target='_blank' network='youtube' />
-        <SocialLogo href="https://www.facebook.com/profile.php?id=100090469154443" target='_blank' network='facebook' />
+        <SocialLogo url="https://www.instagram.com/poppytimme/" target='_blank' network='instagram' />
+        <SocialLogo url="https://www.tiktok.com/@poppy_timme " target='_blank' network='tiktok' />
+        <SocialLogo url="https://www.youtube.com/@poppytime" target='_blank' network='youtube' />
+        <SocialLogo url="https://www.facebook.com/profile.php?id=100090469154443" target='_blank' network='facebook' />
       </SocialMediasContainer>
       <CopyRight>
         {t('generics.designed')}

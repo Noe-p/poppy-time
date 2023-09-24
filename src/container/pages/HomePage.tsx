@@ -2,7 +2,6 @@ import {
   H1,
   Layout,
   P18,
-  Video,
 } from '@/components';
 import router from 'next/router';
 import { CardProject, Header } from '@/container/components';
