@@ -1,39 +1,101 @@
 {
-  "langage": "en",
+  "language": "en",
   "home": {
-    "name": "Poppy",
-    "title": {
-      "part1": "Poppy", 
-      "part2": "Time"
-    },
+    "name": "Poppy Book",
+    "title": "Poppy Time",
     "sections": {
-      "title": "Nous sommes Poppy Time.",
-      "p1": "Sur ce site vous trouverez tout ce que vous avez à savoir sur notre groupe Poppy Time.", 
-      "p2": "Rencontrés au lycée à Quimper. Nous jouons du Funk, Electronique, Rock et adorons mélanger les rythmes et les genres pour produire une musique entraînante et intéressante.", 
-      "p3": "Nous sommes à la recherche de dates de concerts pour l'été prochain. Nous pouvons nous produire pour une durée de 1h, uniquement avec des compositions originales. Vous pouvez écouter et voir une partie de nos compositions dans la rubrique ",
-      "p4": "Nous avons déjà eu l'opportunité de nous produire pour de nombreux concerts, notamment à la fête de la musique de Brest et au festival de Cornouaille à Quimper. Vous pouvez voir des extraits de nos concerts dans la rubrique ", 
-      "p5": "Notre groupe est composé de cinq membres. Un guitariste, un bassiste/chanteur, un pianiste, une batteuse et un saxophoniste. chacun apportant sa propre touche personnelle à notre musique. Vous pouvez visualisez une petite vidéo pour chaque membre du groupe dans la rubrique ", 
-      "p6": "Lors de nos concerts, on a eu de nombreux retours positifs. On à également été relevées dans des articles de presse et nous avons même eu l'honneur d'être présentés sur les ondes de France Inter. Vous pouvez voir ces articles dans la rubrique Revus de presse.", 
-      "p7": "Si vous voulez voir nos projets et nos futurs projets, rendez-vous dans la rubrique nos projets.", 
-      "p8": "Nous serions ravis de participer à votre événement. Vous pouvez être sûr que si vous programmez Poppy Time tout le monde pourra danser et groover.", 
-      "p9": "Vous pouvez nous suivre sur les réseaux sociaux, Instagram, Facebook, Tik Tok, Youtube et nous contacter par mail: poppy.timme@gmail.com"
+      "title": "We are <br/> Poppy Time",
+      "p1": "On this website, you will find everything you need to know about our group, Poppy Time.",
+      "p2": "We met in high school in Quimper. We play Funk, Electronic, Rock, and love mixing rhythms and genres to produce catchy and interesting music.",
+      "p3": "We are looking for concert dates for next summer. We can perform for 1 hour, exclusively with original compositions. You can listen to and watch some of our compositions in the section ",
+      "p4": "We have already had the opportunity to perform for many concerts, including the Brest Music Festival and the Cornouaille Festival in Quimper. You can see excerpts from our concerts in the section ",
+      "p5": "Our group consists of five members: a guitarist, a bassist/singer, a pianist, a drummer, and a saxophonist. Each brings their own personal touch to our music. You can watch a short video for each member of the group in the section ",
+      "p6": "During our concerts, we received many positive feedbacks. We have also been featured in press articles and even had the honor of being featured on France Inter. You can see these articles in the section ",
+      "p7": "If you want to see our current and future projects, visit the section ",
+      "p8": "We would be delighted to participate in your event. You can be sure that if you book Poppy Time, everyone will be able to dance and groove.",
+      "p9": "You can follow us on social media: Instagram, Facebook, TikTok, YouTube, and contact us via email at poppy.timme@gmail.com"
+    }
+  },
+  "studio": {
+    "name": "Studio",
+    "title": "Studio",
+    "studio-1": {
+      "title": "Novomax",
+      "description": "During August 2023, we focused on recording and filming a part of our set at Novomax in Quimper, in order to broadcast them and find new concert dates.",
+      "videos-1": {
+        "description": "Inspired by 1970s progressive rock. Parisian sunset, life on the streets, addiction of all kinds, a woman searches for her kidnapped son in vain..."
+      },
+      "videos-2": {
+        "description": "Music focused on a sense of nostalgia, telling the story of people struggling to let go of past happiness and move towards something new."
+      },
+      "videos-3": {
+        "description": "Music in 2 parts that starts very funky and then mixes it with a techno-inspired bass play and wild saxophone flights."
+      },
+      "videos-4": {
+        "description": "Take off means taking off, and this music gradually builds up to finally take off in an somewhat epic manner."
+      },
+      "videos-5": {
+        "description": "A very funky groove, the funkyman doesn't hesitate to calm down the game to make room for his frenzied piano solo."
+      },
+      "videos-6": {
+        "description": "Combining jungle techno with jersey drill, with a touch of Cory Wong and Mononeon, all of which means an adrenaline rush no matter the source."
+      }
     }
   },
   "concert": {
-    "name": "concert",
-    "title": "Concert"
-  },
-  "studio": {
-    "name": "studio",
-    "title": "Studio"
+    "name": "Concert",
+    "title": "Concert",
+    "concert-1": {
+      "title": "Music Festival",
+      "description": "Last summer, we were selected by the Brest city council, supervised by Margoulin Production. We had the opportunity to close the Étienne Dolet street stage during the music festival."
+    },
+    "concert-2": {
+      "title": "Private Concert",
+      "description": "We played at a private party with 150 people."
+    }
   },
   "musician": {
-    "name": "musicien",
-    "title": "Musicien"
+    "name": "The Musicians",
+    "title": "The Musicians",
+    "manon": {
+      "description": "Student at the Brest Conservatory (DEM)",
+      "instrument": "Drummer",
+      "age": "18 years old"
+    },
+    "robin": {
+      "description": "Student in BTS Audiovisual",
+      "instrument": "Guitarist",
+      "age": "19 years old"
+    },
+    "louis": {
+      "description": "High School Senior",
+      "instrument": "Keyboardist",
+      "age": "19 years old"
+    },
+    "finlay": {
+      "description": "Student at the Jazz Faculty",
+      "instrument": "Bassist and Singer",
+      "age": "19 years old"
+    },
+    "alexis": {
+      "description": "Student at the Brest Conservatory (DEM)",
+      "instrument": "Saxophonist",
+      "age": "19 years old"
+    }
   },
-  "ep": {
-    "name": "EP",
-    "title": "EP"
+  "project": {
+    "name": "Project",
+    "title": "Project",
+    "p1": "Last March, we released a 2-track EP available on all streaming platforms.",
+    "p2": "We have the ambition to professionalize our group.",
+    "p3": "We already have a date for November 25th at Run Ar Puns.",
+    "p4": "We are currently working on a new album that will be released in 2024."
+  },
+  "news": {
+    "name": "Press Reviews",
+    "title": "Press Reviews",
+    "p1": "Before the music festival, we were interviewed by Le Télégramme:",
+    "p2": "At the end of our concert at the Cornouaille Festival, we were mentioned on France Inter and also appeared in Ouest France:"
   },
   "generics": {
     "copyright": "Copyright © 2023 - Poppy Time - All rights reserved",
