@@ -52,6 +52,13 @@ export function NavBar(props: NavBarProps): React.JSX.Element {
                 {t('studio.name')}
               </TextNavigation>
             </RightLink>
+            <RightLink onClick={() => router.push(ROUTES.musician)}>
+              <TextNavigation
+                $selected={`/${router.pathname.split('/')[1]}` === ROUTES.musician}
+              >
+                {t('musician.name')}
+              </TextNavigation>
+            </RightLink>
             <RightLink onClick={() => router.push(ROUTES.concert)}>
               <TextNavigation
                 $selected={
@@ -59,13 +66,6 @@ export function NavBar(props: NavBarProps): React.JSX.Element {
                 }
               >
                 {t('concert.name')}
-              </TextNavigation>
-            </RightLink>
-            <RightLink onClick={() => router.push(ROUTES.musician)}>
-              <TextNavigation
-                $selected={`/${router.pathname.split('/')[1]}` === ROUTES.musician}
-              >
-                {t('musician.name')}
               </TextNavigation>
             </RightLink>
             <RightLink onClick={() => router.push(ROUTES.news)}>
@@ -105,18 +105,18 @@ export function NavBar(props: NavBarProps): React.JSX.Element {
                 {t('studio.name')}
               </MenuLink>
               <MenuLink
+                $selected={`/${router.pathname.split('/')[1]}` === ROUTES.musician}
+                onClick={() => router.push(ROUTES.musician)}
+              >
+                {t('musician.name')}
+              </MenuLink>
+              <MenuLink
                 $selected={
                   `/${router.pathname.split('/')[1]}` === ROUTES.concert
                 }
                 onClick={() => router.push(ROUTES.concert)}
               >
                 {t('concert.name')}
-              </MenuLink>
-              <MenuLink
-                $selected={`/${router.pathname.split('/')[1]}` === ROUTES.musician}
-                onClick={() => router.push(ROUTES.musician)}
-              >
-                {t('musician.name')}
               </MenuLink>
               <MenuLink
                 $selected={`/${router.pathname.split('/')[1]}` === ROUTES.news}

@@ -8,13 +8,15 @@ import { CardProject, Header } from '@/container/components';
 import { Trans, useTranslation } from 'next-i18next';
 import tw from 'tailwind-styled-components';
 import { ROUTES } from '@/routing';
+import { useScroll } from '@/hooks/useScroll';
 
 
 export function HomePage(): React.JSX.Element {
   const { t } = useTranslation();
+  const { scrollY } = useScroll();
 
   return (
-    <Layout>
+    <Layout isNavClose={scrollY < 100}>
       <Header />
       <Main>
         <div className='my-10'>
@@ -22,14 +24,7 @@ export function HomePage(): React.JSX.Element {
           <Text>{t('home.sections.p1')}</Text>
           <Text>{t('home.sections.p2')}</Text>
         </div>
-        <CardProject className='mt-10 min-h-150' onClick={() => router.push(ROUTES.concert)} project={
-          {
-            id: '1',
-            name: t('concert.title'),
-            description: [t('home.sections.p4')],
-            backgroundImage: { url: '/images/home/concert.jpeg' },
-          }
-        } />
+       
         <CardProject className='mt-10 min-h-150' onClick={() => router.push(ROUTES.studio)} project={
           {
             id: '2',
@@ -44,6 +39,14 @@ export function HomePage(): React.JSX.Element {
             name: t('musician.title'),
             description: [t('home.sections.p5')],
             backgroundImage: { url: '/images/home/musician.JPG' },
+          }
+        } />
+        <CardProject className='mt-10 min-h-150' onClick={() => router.push(ROUTES.concert)} project={
+          {
+            id: '1',
+            name: t('concert.title'),
+            description: [t('home.sections.p4')],
+            backgroundImage: { url: '/images/home/concert.jpeg' },
           }
         } />
         <CardProject className='mt-10 min-h-150' onClick={() => router.push(ROUTES.news)} project={

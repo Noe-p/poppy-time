@@ -55,17 +55,17 @@
     }
   },
   "musician": {
-    "name": "Interviews",
+    "name": "Les Musciens",
     "title": "Les musiciens",
     "manon":{
-      "description": "Étudiante au concervatoir de Brest (DEM)",
+      "description": "Étudiante au concervatoire de Brest (DEM)",
       "instrument": "Batteuse",
-      "age": "19 ans"
+      "age": "18 ans"
     },
     "robin":{
       "description": "Étudiant au BTS Audiovisuel",
       "instrument": "Guitariste",
-      "age": "20 ans"
+      "age": "19 ans"
     },
     "louis":{
       "description": "Lycée Terminal",
@@ -75,12 +75,12 @@
     "finlay":{
       "description": "Étudiant en Fac de Jazz",
       "instrument": "Bassiste et Chanteur",
-      "age": "20 ans"
+      "age": "19 ans"
     },
     "alexis":{
-      "description": "Étudiant au concervatoir de Brest (DEM)",
+      "description": "Étudiant au concervatoire de Brest (DEM)",
       "instrument": "Saxophoniste",
-      "age": "20 ans"
+      "age": "19 ans"
     }
   },
   "project": {
