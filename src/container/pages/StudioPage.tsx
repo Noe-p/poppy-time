@@ -47,13 +47,12 @@ export function StudioPage(): React.JSX.Element {
   ]
 
   return (
-    <Layout>
+    <Layout>  
       <Main>
         {studios.map((concert) => (
           <ConcertSection key={concert.id}>
-            <ConcertTitle>{concert.title}</ConcertTitle>
             {concert.description && <ConcertDescription>{concert.description}</ConcertDescription>}
-            <Grid1 className='w-full'>
+            <Grid1 className="w-full">
               {concert.videos?.map((video) => (
                 <GridCol1 key={video.url}>
                   {video.title && <H3 className={'text-center my-2 md:my-7'}>{video.title}</H3>}
