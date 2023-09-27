@@ -5,51 +5,51 @@
     "title": "Poppy Time",
     "sections": {
       "title": "Nous sommes <br/> Poppy Time",
-      "p1": "Sur ce site vous trouverez tout ce que vous avez à savoir sur notre groupe Poppy Time.", 
-      "p2": "Rencontrés au lycée à Quimper. Nous jouons du Funk, Electronique, Rock et adorons mélanger les rythmes et les genres pour produire une musique entraînante et intéressante.", 
+      "p1": "Sur ce site vous trouverez tout ce que vous avez à savoir sur notre groupe Poppy Time.",
+      "p2": "Rencontrés au lycée à Quimper. Nous jouons du Funk, Electronique, Rock et adorons mélanger les rythmes et les genres pour produire une musique entraînante et intéressante.",
       "p3": "Nous sommes à la recherche de dates de concerts pour l'été prochain. Nous pouvons nous produire pour une durée de 1h, uniquement avec des compositions originales. Vous pouvez écouter et voir une partie de nos compositions dans la rubrique ",
-      "p4": "Nous avons déjà eu l'opportunité de nous produire pour de nombreux concerts, notamment à la fête de la musique de Brest et au festival de Cornouaille à Quimper. Vous pouvez voir des extraits de nos concerts dans la rubrique ", 
-      "p5": "Notre groupe est composé de cinq membres. Un guitariste, un bassiste/chanteur, un pianiste, une batteuse et un saxophoniste. chacun apportant sa propre touche personnelle à notre musique. Vous pouvez visualisez une petite vidéo pour chaque membre du groupe dans la rubrique ", 
-      "p6": "Lors de nos concerts, on a eu de nombreux retours positifs. On à également été relevées dans des articles de presse et nous avons même eu l'honneur d'être présentés sur les ondes de France Inter. Vous pouvez voir ces articles dans la rubrique ", 
-      "p7": "Si vous voulez voir nos projets et nos futurs projets, rendez-vous dans la rubrique ", 
-      "p8": "Nous serions ravis de participer à votre événement. Vous pouvez être sûr que si vous programmez Poppy Time tout le monde pourra danser et groover.", 
+      "p4": "Nous avons déjà eu l'opportunité de nous produire pour de nombreux concerts, notamment à la fête de la musique de Brest et au festival de Cornouaille à Quimper. Vous pouvez voir des extraits de nos concerts dans la rubrique ",
+      "p5": "Notre groupe est composé de cinq membres. Un guitariste, un bassiste/chanteur, un pianiste, une batteuse et un saxophoniste. chacun apportant sa propre touche personnelle à notre musique. Vous pouvez visualisez une petite vidéo pour chaque membre du groupe dans la rubrique ",
+      "p6": "Lors de nos concerts, on a eu de nombreux retours positifs. On à également été relevées dans des articles de presse et nous avons même eu l'honneur d'être présentés sur les ondes de France Inter. Vous pouvez voir ces articles dans la rubrique ",
+      "p7": "Si vous voulez voir nos projets et nos futurs projets, rendez-vous dans la rubrique ",
+      "p8": "Nous serions ravis de participer à votre événement. Vous pouvez être sûr que si vous programmez Poppy Time tout le monde pourra danser et groover.",
       "p9": "Vous pouvez nous suivre sur les réseaux sociaux, Instagram, Facebook, Tik Tok, Youtube et nous contacter par mail: poppy.timme@gmail.com"
     }
   },
-    "studio": {
+  "studio": {
     "name": "Studio",
     "title": "Studio",
-    "studio-1":{
+    "studio-1": {
       "title": "Novomax",
       "description": "Pendant le mois d'août 2023 nous nous sommes concentrés sur l’enregistrement et la captation vidéo d’une partie de notre set au Novomax à Quimper, pour pouvoir les diffuser et trouver de nouvelles dates de concert.",
-      "videos-1":{
+      "videos-1": {
         "description": "Inspiration rock progressif des années 70. Coucher de soleil de Paris, à la rue, addiction en tout genre, une femme cherche son fils enlevé d'elle, mais en vain..."
       },
-      "videos-2":{
+      "videos-2": {
         "description": "Musique axée sur un sentiment de nostalgie racontant l’histoire des personnes qui ont du mal à se défaire des bonheurs du passé et évoluer vers quelque chose de nouveau."
       },
-      "videos-3":{
-        "description": "Musique en 2 parties qui commence très funk pour ensuite le mélanger avec un jeu de basse inspiré techno avec des envolé de saxophone endiablé."
+      "videos-3": {
+        "description": "Musique en 2 parties qui commence très funk pour ensuite le mélanger avec un jeu de basse inspiré techno avec des envolés de saxophone endiablé."
       },
-      "videos-4":{
+      "videos-4": {
         "description": "Take off signifie décolle à l'impératif. Cette musique monte en intensité petit à petit pour enfin décollé dans un élan quelque peu épique."
       },
-      "videos-5":{
+      "videos-5": {
         "description": "Un groove très funky, le funkyman n'hésite pas à calmer le jeu pour laisser place à son solo de piano endiablé."
       },
-      "videos-6":{
+      "videos-6": {
         "description": "Combiné jungle techno avec de la jersey drill sous un soupçon de Cory Wong et de Mononeon, tout ça signifiant un pic d'adrénaline quelque soit la source."
       }
     }
   },
   "concert": {
     "name": "Concert",
-    "title": "Concert", 
-    "concert-1":{
+    "title": "Concert",
+    "concert-1": {
       "title": "Fête de la musique",
       "description": "L'été dernier, nous avons été sélectionnés par la mairie de Brest supervisée par margoulin production. Nous avons eu l'opportunité de clôturer la scène rue etienne dolet lors de la fête de la musique."
     },
-    "concert-2":{
+    "concert-2": {
       "title": "Concert privé",
       "description": "Nous avons joué dans une fête privée avec 150 personnes"
     }
@@ -57,27 +57,27 @@
   "musician": {
     "name": "Les Musciens",
     "title": "Les musiciens",
-    "manon":{
+    "manon": {
       "description": "Étudiante au concervatoire de Brest (DEM)",
       "instrument": "Batteuse",
       "age": "18 ans"
     },
-    "robin":{
+    "robin": {
       "description": "Étudiant au BTS Audiovisuel",
       "instrument": "Guitariste",
       "age": "19 ans"
     },
-    "louis":{
+    "louis": {
       "description": "Lycée Terminal",
       "instrument": "Clavieriste",
       "age": "19 ans"
     },
-    "finlay":{
+    "finlay": {
       "description": "Étudiant en Fac de Jazz",
       "instrument": "Bassiste et Chanteur",
       "age": "19 ans"
     },
-    "alexis":{
+    "alexis": {
       "description": "Étudiant au concervatoire de Brest (DEM)",
       "instrument": "Saxophoniste",
       "age": "19 ans"
@@ -85,17 +85,17 @@
   },
   "project": {
     "name": "Projet",
-    "title": "Projet", 
-    "p1":"En Mars dernier nous sorti en EP de 2 morceaux disponible sur toutes les plateformes de streaming.",
+    "title": "Projet",
+    "p1": "En mars dernier nous avons sorti un EP de deux morceaux disponibles sur toutes les plateformes de streaming.",
     "p2": "Nous avons l’ambition de professionnaliser notre groupe.",
     "p3": "Nous avons déjà une date pour le 25 novembre prochain au Run Ar Puns.",
-    "p4":"Nous sommes en écriture d’un nouvel album qui sortira en 2024."
+    "p4": "Nous sommes en écriture d’un nouvel album qui sortira en 2024."
   },
   "news": {
-    "name": "Revus de presse", 
-    "title": "Revus de presse",
-    "p1":"Avant la fête de la musique nous avons été interviewé par le Télégramme:",
-    "p2":"A la fin de notre concert au festival de cornouaille, nous avons été mentionné sur France inter et nous sommes également apparut sur le Ouest France:"
+    "name": "Revue de presse",
+    "title": "Revue de presse",
+    "p1": "Avant la fête de la musique nous avons été interviewé par le Télégramme:",
+    "p2": "A la fin de notre concert au festival de cornouaille, nous avons été mentionné sur France inter et nous sommes également apparu sur le Ouest France:"
   },
   "generics": {
     "copyright": "Copyright © 2023 - Poppy Time - Tous droits réservés",
