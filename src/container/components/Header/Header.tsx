@@ -1,4 +1,4 @@
-import { FlexRow, H1, Image } from '@/components';
+import { FlexRow, H1 } from '@/components';
 import { useTranslation } from 'next-i18next';
 import React, { useEffect, useState } from 'react';
 import tw from 'tailwind-styled-components';
@@ -21,14 +21,17 @@ export function Header(props: HeaderProps): React.JSX.Element {
   return (
     <Main className={className}>
       <Filter />
-      <ImageBackground>
+      {/* <ImageBackground>
         <Image
           src='/images/header.webP'
           alt='header'
           className='border-none'
         />
-      </ImageBackground>
-      <FlexRow className='flex-col md:flex-row'>
+      </ImageBackground> */}
+      <VideoBackground autoPlay loop muted playsInline>
+        <source src="/videos/header.mp4" type="video/mp4" />
+      </VideoBackground>
+      <FlexRow className="flex-col md:flex-row">
         <Title $isAnimated={isAnimated}>{t('home.title')}</Title>
       </FlexRow>
     </Main>
@@ -57,7 +60,7 @@ const Filter = tw.div`
   z-10
 `;
 
-const ImageBackground = tw.div`
+const VideoBackground = tw.video`
   absolute
   top-0
   left-0
@@ -68,7 +71,7 @@ const ImageBackground = tw.div`
   z-0
 `;
 
-const Title = tw(H1) <{ $isAnimated: boolean }>`
+const Title = tw(H1)<{ $isAnimated: boolean }>`
   text-white
   text-8xl
   font-bold
