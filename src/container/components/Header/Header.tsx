@@ -21,13 +21,6 @@ export function Header(props: HeaderProps): React.JSX.Element {
   return (
     <Main className={className}>
       <Filter />
-      {/* <ImageBackground>
-        <Image
-          src='/images/header.webP'
-          alt='header'
-          className='border-none'
-        />
-      </ImageBackground> */}
       <VideoBackground autoPlay loop muted playsInline>
         <source src="/videos/header.mp4" type="video/mp4" />
       </VideoBackground>
@@ -69,6 +62,9 @@ const VideoBackground = tw.video`
   w-full
   h-full
   z-0
+  object-cover
+  object-center
+  
 `;
 
 const Title = tw(H1)<{ $isAnimated: boolean }>`

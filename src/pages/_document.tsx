@@ -6,18 +6,18 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel='icon' href='favicon.svg' />
+          <link rel="icon" href="favicon.png" />
 
           {/* <!-- Google Fonts --> */}
-          <link rel='preconnect' href='https://fonts.googleapis.com' />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
-            rel='preconnect'
-            href='https://fonts.gstatic.com'
-            crossOrigin=''
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin=""
           />
           <link
-            href='https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap'
-            rel='stylesheet'
+            href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
           ></link>
           {/* <!-- End Google Fonts --> */}
         </Head>
